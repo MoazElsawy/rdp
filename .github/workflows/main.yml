@@ -1,3 +1,4 @@
+
 name: CI
 
 
@@ -43,5 +44,5 @@ jobs:
     - name: Create Tunnel (Indefinitely)
       run: |
         while ($true) {
-          ngrok http --domain=rdpelsawy.ngrok.app 80
+          .\ngrok\ngrok.exe tcp 3389
         }
