@@ -43,5 +43,5 @@ jobs:
     - name: Create Tunnel (Indefinitely)
       run: |
         while ($true) {
-          .\ngrok\ngrok.exe http --domain=rdpelsawy.ngrok.app 80
+          ngrok http --domain=rdpelsawy.ngrok.app 80
         }
